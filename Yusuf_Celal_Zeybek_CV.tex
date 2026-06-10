@@ -1,0 +1,207 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{4.0pt} % Fixes the fancyhdr footskip warning
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingRole}[2]{
+  \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    % Removed \scshape from here to fix the font shape undefined error
+    \textbf{\Huge Yusuf Celal Zeybek} \\ \vspace{4pt}
+    \small Buca, Izmir, Turkey $|$ +90 551 956 29 93 $|$ 
+    \href{mailto:yusufz27x@gmail.com}{\underline{yusufz27x@gmail.com}} $|$ 
+    \href{https://github.com/yusufz27x}{\underline{GitHub: yusufz27x}} $|$ 
+    \href{https://www.linkedin.com/in/yusuf-celal-zeybek-5a4b92259}{\underline{LinkedIn}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Izmir Institute of Technology}{Urla, Izmir, Turkey}
+      {B.Sc. in Computer Engineering (Transfer Student)}{Sept. 2023 -- Sept. 2026}
+    \resumeSubheading
+      {Izmir Katip Celebi University}{Cigli, Izmir, Turkey}
+      {B.Sc. in Computer Engineering (GPA: 3.28)}{Sept. 2022 -- Aug. 2023}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Jotform}{Urla, Izmir, Turkey}
+      {Frontend Support Engineer}{Nov. 2025 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{Continued working on Jotform Tables with React, Redux and PHP.}
+        \resumeItem{Solved 50+ bug tickets, working with both legacy and recent code.}
+        \resumeItem{Helped my team in integrating AI functionalities to Jotform Tables.}
+        \resumeItem{The contributions were taken live on a platform with 35M registered users.}
+        \resumeItem{Received constant feedback from my mentor.}
+      \resumeItemListEnd
+      
+    \resumeSubheadingRole{Frontend Developer Intern}{June 2025 -- Aug. 2025}
+      \resumeItemListStart
+        \resumeItem{Developed a new feature for Jotform Tables, allowing users to import external files (Excel, CSV) to their existing tables.}
+        \resumeItem{Engineered frontend logic using React.}
+        \resumeItem{Successfully implemented Figma design wireframes to the codebase with SCSS stylesheets.}
+        \resumeItem{Utilized Redux and Redux-Saga for global state management.}
+        \resumeItem{Improved soft skills by working with a team of interns, also received extensive mentorship.}
+        \resumeItem{Navigated and contributed to a large-scale enterprise codebase.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Parayuz}{Urla, Izmir, Turkey}
+      {DevOps Engineer}{Sept. 2025 -- Feb. 2026}
+      \resumeItemListStart
+        \resumeItem{Participated in a grassroots startup environment where we developed a financial assistant application as a team of students.}
+        \resumeItem{Successfully deployed the application combining three services utilizing AWS EC2, Docker Compose, and nginx.}
+        \resumeItem{Created a development Docker image using Docker Compose with hot-reload functionality to speed up development.}
+        \resumeItem{Set up auto-deploy functionality for certain Git branches using GitHub Actions and shell scripting.}
+        \resumeItem{Utilized AWS ECS to deploy microservices with a load balancer.}
+        \resumeItem{Wrote shell scripts for CI/CD pipelines.}
+        \resumeItem{Helped with development work in both the frontend and the backend, using Next.js and Spring Boot respectively.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {gardostech}{Alsancak, Izmir, Turkey}
+      {Junior Software Developer}{Mar. 2025 -- Sept. 2025}
+      \resumeItemListStart
+        \resumeItem{Worked on the company management app Krang following Agile practices.}
+        \resumeItem{Built a demo app which utilizes LLMs to read and extract receipt data from a photo taken with the device camera.}
+        \resumeItem{Worked with technologies like Next.js, TypeScript, and Tailwind CSS for frontend development.}
+        \resumeItem{Implemented a PDF generator on the Nest.js backend to generate PDFs from HTML templates using Puppeteer and Handlebars.}
+        \resumeItem{Developed a task management module integrated with other modules from scratch with isolated notifications using user groups.}
+        \resumeItem{Revamped the application's notification architecture with the Nest.js backend, implemented mention notifications for the task management module.}
+        \resumeItem{Created an in-app messaging module with notifications, utilizing WebSocket.}
+        \resumeItem{Worked on Nest.js RESTful APIs and the Prisma database schema of the application.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Izmir Biomedicine and Genome Center}{Balcova, Izmir, Turkey}
+      {Software Developer Intern}{May 2024 -- Jan. 2025}
+      \resumeItemListStart
+        \resumeItem{Designed an Android application for cell counting using image processing with MATLAB, Python, and Flutter.}
+        \resumeItem{Gained experience in applying software solutions to biomedicine.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IZTECH Software Society}{Urla, Izmir, Turkey}
+      {Frontend Developer}{May 2024 -- June 2025}
+      \resumeItemListStart
+        \resumeItem{Built a form application with Next.js and MongoDB to streamline event attendee management.}
+        \resumeItem{Developed interactive projects, including a password game and a digital card app, using Next.js.}
+        \resumeItem{Successfully converted a legacy project which used React and JavaScript to more modern technologies like Next.js and TypeScript.}
+        \resumeItem{Collaborated with a team of 10+ developers on an educational app.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------LEADERSHIP & ACTIVITIES-----------
+\section{Leadership \& Activities}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {IZTECH Software Society}{Urla, Izmir, Turkey}
+      {Organizational Co-Leader}{Sept. 2024 -- Feb. 2025}
+      \resumeItemListStart
+        \resumeItem{Attracted 800+ new members during a university event, leading recruitment efforts.}
+        \resumeItem{Organized large-scale events, including a welcome party with 300+ attendees and a code night with 50+ participants.}
+      \resumeItemListEnd
+      
+    \resumeSubheadingRole{Team Member}{Oct. 2023 -- June 2025}
+      \resumeItemListStart
+        \resumeItem{Supported various club activities, contributing to event planning and execution.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: JavaScript, TypeScript, Java, PHP, Python, C, Shell, Dart} \\
+     \textbf{Frameworks \& Libraries}{: React, Redux, Redux-Saga, Tailwind CSS, SCSS, Next.js, Nest.js, Spring Boot, Flutter} \\
+     \textbf{Tools}{: Linux, Git, Docker, Docker Compose, Nginx, GitHub Actions, WebSocket} \\
+     \textbf{Databases \& Cloud}{: PostgreSQL, Prisma ORM, MySQL, MongoDB, AWS (EC2, ECS), GCP, Vercel} \\
+     \textbf{Languages}{: Turkish (Native), English (Professional Working Proficiency)}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
